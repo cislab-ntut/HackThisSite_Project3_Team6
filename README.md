@@ -16,3 +16,14 @@
 ![](app_challenge4/投影片5.PNG)
 2. [http://www.nullsecurity.org/article/hackthissite_org_application_challenges#app_04w](http://www.nullsecurity.org/article/hackthissite_org_application_challenges#app_04w)
 ### 解法
+
+## 1051556 張楚翎 - Application Challenge 7：Press the Button.
+### 題目
+1. 題目為一個執行檔
+2. 每個button都有自己的提示音，但按下他們並未有任何變化
+
+### 初步嘗試
+
+### 上網搜尋
+
+### 解法
