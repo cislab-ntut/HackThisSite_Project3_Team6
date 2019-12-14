@@ -39,6 +39,7 @@
 確認結果正確
 ```
 ![](app_challenge4/投影片11.PNG)
+![](app_challenge4/投影片12.PNG)
 
 
 ## 1051556 張楚翎 - Application Challenge 7：Press the Button.
