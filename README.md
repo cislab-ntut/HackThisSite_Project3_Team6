@@ -6,3 +6,6 @@
 ### 初步嘗試
 ### 上網搜尋
 ### 解法
+
+
+##1051556 張楚翎 - Application Challenge 7 : Press the Button.
