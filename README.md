@@ -49,6 +49,7 @@
 ![](app_challenge7/封面.jpg)
 ### 初步嘗試
 
+
 ### 上網搜尋
 
 ### 解法
@@ -60,6 +61,7 @@
 ```
 在[記憶體段點](https://morosedog.gitlab.io/j.j.blogs/ollydbg-20190708-OllyDBG-4/)發現模式錯誤，
 所以將此模式調回來就可以看到正常的指令了。
+(錯誤位址)
 ![](app_challenge7/投影片1-1.jpg)
 (修改後)
 ![](app_challenge7/投影片1-2.jpg)
