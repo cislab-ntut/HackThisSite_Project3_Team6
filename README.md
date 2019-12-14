@@ -54,6 +54,24 @@
 
 ### 解法
 
+Step1: 查看Text string 裡有無相關訊息
+![](app_challenge7/投影片2.jpg)
+Step2: 按下第一次執行  修改對應的數字200->100
+![](app_challenge7/投影片3-1.jpg)
+(修改後)
+![](app_challenge7/投影片3-2.jpg)
+
+Step3: 按下第二次執行  修改對應的數字600->500
+![](app_challenge7/投影片4-1.jpg)
+(修改後)
+![](app_challenge7/投影片4-2.jpg)
+
+Step 4: 按下第三次執行  修改對應的數字1100->1000
+![](app_challenge7/投影片5-1.jpg)
+(修改後)
+![](app_challenge7/投影片5-2.jpg)
+
+
 ### 遇到的困難
 ```
 利用利用OllyDbg開啟題目的執行檔之後遇到記憶體不太正確的問題，
