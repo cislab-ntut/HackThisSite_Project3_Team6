@@ -54,3 +54,12 @@
 ### 解法
 
 ### 遇到的困難
+```
+利用利用OllyDbg開啟題目的執行檔之後遇到記憶體不太正確的問題，
+所以查詢了一下有關開啟檔案的方式
+```
+在[記憶體段點](https://morosedog.gitlab.io/j.j.blogs/ollydbg-20190708-OllyDBG-4/)發現模式錯誤，
+所以將此模式調回來就可以看到正常的指令了。
+![](app_challenge7/投影片1-1.jpg)
+![](app_challenge7/投影片1-2.jpg)
+
