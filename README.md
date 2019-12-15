@@ -50,14 +50,15 @@
 ### 初步嘗試
 1.每個button都按下去一次，除了會發出不同聲音之外，甚麼事情也沒發生。
  ![](app_challenge9/封面.jpg)
+ 
 2.發現執行檔就只是一個介面，並無任何線索可以找到解答的地方，於是上網找了可以開啟執行檔的程式。
 
 ### 上網搜尋
-```
+
 1.解題過程中，有上網找看看其他人的[解法](http://www.nullsecurity.org/article/hackthissite_org_application_challenges#app_09w)
 但因為他的方法偏複雜，且沒有完整的流程，所以其實沒有很清楚到底在幹嘛。
 2.另一個問題是我使用的這個反組譯程式中，因需要改寫裡面的內容，所以針對這個問題，也上網找了對應的[解決辦法](https://blog.csdn.net/BetaBin/article/details/7309415)。
-```
+
 
 
 ### 解法
