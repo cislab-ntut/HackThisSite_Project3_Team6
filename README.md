@@ -60,7 +60,6 @@
 2.另一個問題是我使用的這個反組譯程式中，因需要改寫裡面的內容，所以針對這個問題，也上網找了對應的[解決辦法](https://blog.csdn.net/BetaBin/article/details/7309415)。
 
 
-
 ### 解法
 
 Step1: 查看Text string 裡有無相關訊息
