@@ -49,7 +49,7 @@
 ```
 ### 初步嘗試
 1.每個button都按下去一次，除了會發出不同聲音之外，甚麼事情也沒發生。
- ![](app_challenge7/封面.jpg)
+ ![](app_challenge9/封面.jpg)
 2.發現執行檔就只是一個介面，並無任何線索可以找到解答的地方，於是上網找了可以開啟執行檔的程式。
 
 ### 上網搜尋
@@ -60,24 +60,24 @@
 ### 解法
 
 Step1: 查看Text string 裡有無相關訊息
-![](app_challenge7/投影片2.jpg)
+![](app_challenge9/投影片2.jpg)
 Step2: 按下第一次執行  修改對應的數字200->100
-![](app_challenge7/投影片3-1.jpg)
+![](app_challenge9/投影片3-1.jpg)
 (修改後)
-![](app_challenge7/投影片3-2.jpg)
+![](app_challenge9/投影片3-2.jpg)
 
 Step3: 按下第二次執行  修改對應的數字600->500
-![](app_challenge7/投影片4-1.jpg)
+![](app_challenge9/投影片4-1.jpg)
 (修改後)
-![](app_challenge7/投影片4-2.jpg)
+![](app_challenge9/投影片4-2.jpg)
 
 Step 4: 按下第三次執行  修改對應的數字1100->1000
-![](app_challenge7/投影片5-1.jpg)
+![](app_challenge9/投影片5-1.jpg)
 (修改後)
-![](app_challenge7/投影片5-2.jpg)
+![](app_challenge9/投影片5-2.jpg)
 
 Step 5: 將修改完畢的檔案另存新檔後，再開啟此檔案的執行檔，就可以找到答案了。
-![](app_challenge7/投影片6.jpg)
+![](app_challenge9/投影片6.jpg)
 
 ### 遇到的困難
 ```
@@ -87,7 +87,7 @@ Step 5: 將修改完畢的檔案另存新檔後，再開啟此檔案的執行檔
 在[記憶體段點](https://morosedog.gitlab.io/j.j.blogs/ollydbg-20190708-OllyDBG-4/)發現模式錯誤，
 所以將此模式調回來就可以看到正常的指令了。
 (錯誤位址)
-![](app_challenge7/投影片1-1.jpg)
+![](app_challenge9/投影片1-1.jpg)
 (修改後)
-![](app_challenge7/投影片1-2.jpg)
+![](app_challenge9/投影片1-2.jpg)
 
