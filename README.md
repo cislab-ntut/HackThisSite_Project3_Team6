@@ -88,11 +88,11 @@ Step6: 在程式中隨便輸入答案
 ![](app_challenge6/圖片6.png)
 Step7: 堆疊視窗(右下)第一行出現ASCII "Invalid Password"的位置
 ![](app_challenge6/圖片7.png)
-Step8: 堆疊視窗(右下)第一行出現ASCII “Invalid Password”的位置 
+Step8: 資料視窗(左下)搜尋剛剛中斷的位置
 ![](app_challenge6/圖片8.png)
 Step9: 資料視窗(左下)發現隱藏的單字
 ![](app_challenge6/圖片10.png)
-Step10: 將單子重組過後得到答案
+Step10: 將單子重組過後得到答案(cal.magi -> magical)
 ![](app_challenge6/圖片9.png)
 
 
