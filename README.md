@@ -41,6 +41,12 @@
 ![](app_challenge4/投影片11.PNG)
 ![](app_challenge4/投影片12.PNG)
 
+## 1053356 胡嘉芸 - Application Challenge 5：Find the Password.
+### 題目：
+### 初步嘗試：
+### 上網搜尋：
+### 解法：
+### 使用Application Challenge 6的方法是否能找出Password：
 
 ## 1051556 張楚翎 - Application Challenge 9：Press the Button.
 ### 題目
