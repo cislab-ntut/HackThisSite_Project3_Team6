@@ -50,21 +50,65 @@
 ```
 直接執行執行檔，輸入任何字串按enter後執行檔直接關閉
 ```
-![](app_challenge5/ppt1.PNG)
+![](app_challenge5/ppt1.png)
 ```
 開啟cmd執行執行檔，隨意輸入任何字串按enter後，得到 Invalid Password 
 ```
-![](app_challenge5/ppt2.PNG)
+![](app_challenge5/ppt2.png)
 ### 上網搜尋：
-```
 查找反組繹器ollyDbg使用方法，找到這篇[文章](https://ithelp.ithome.com.tw/articles/10188286)
 使用方法是下面這張圖
-```
 ![](app_challenge5/ppt3.PNG)
-
 ### 解法：
-### 使用Application Challenge 6的方法是否能找出Password：
+```
+首先從逆向視窗找出”ASCII "Please enter the password: "”
+```
+![](app_challenge5/ppt4.PNG)
+```
+在下一行 CALL app5win.004011A8 設為中斷點
+```
+![](app_challenge5/ppt5.PNG)
+```
+按下執行後會停在剛剛設中斷點的地方，再從堆疊視窗中找到”ASCII "Please enter the password:”
+記下”ASCII "Please enter the password:”的記憶體位址0019FEF8
+```
+![](app_challenge5/ppt6.png)
+```
+在資料視窗查詢剛剛記下的記憶體位址0019FEF8
+```
+![](app_challenge5/ppt7.PNG)
+```
+查詢後可以發現記憶體位址0019FEF8下兩行有被打亂的英文 g…ppinrtripowe
+```
+![](app_challenge5/ppt8.png)
+```
+重新排列g…ppinrtripowe後可得出一個英文單字，為powertripping
+試著將powertripping輸入到app5win.exe，得到The password is powertripping
 
+```
+![](app_challenge5/ppt9.png)
+```
+將找到的powertripping輸入Application Challenge 5 得到以下畫面，成功找出密碼
+```
+![](app_challenge5/ppt10.png)
+### 使用Application Challenge 6的方法是否能找出Password：
+```
+從逆向視窗找出”ASCII “Invalid Password””
+在下一行設中斷點並執行程式
+```
+![](app_challenge5/ppt補1.png)
+```
+在中斷點處的堆疊視窗中找出”ASCII “Invalid Password””
+發現找出的位址跟上面找出”ASCII “Please enter the password: ””的結果一樣
+```
+![](app_challenge5/ppt補2.png)
+![](app_challenge5/ppt補3.png)
+```
+因為找出的位址一樣，所以找出來的答案也會一樣
+```
+![](app_challenge5/ppt補4.png)
+![](app_challenge5/ppt補5.png)
+####結果為使用Application Challenge 6的方法是可以找出Password的。
 
 ## 1053331 徐永棚 - Application Challenge 6：Find the Password.
 ### 題目：
