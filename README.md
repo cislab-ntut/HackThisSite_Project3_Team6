@@ -74,8 +74,26 @@
 4.堆疊視窗：顯示堆疊（stack）內容的視窗。
 ```
 ### 解法：
-
-
+Step1: 打開OllyDbg並開啟app6win.exe
+![](app_challenge6/圖片1.png)
+Step2: 按下執行
+![](app_challenge6/圖片2.png)
+Step3: 在逆向視窗(左上)按下搜尋字串
+![](app_challenge6/圖片3.png)
+Step4: 搜尋 ASCII "Invalid Password"
+![](app_challenge6/圖片4.png)
+Step5: 搜尋後對下一行設中斷點
+![](app_challenge6/圖片5.png)
+Step6: 在程式中隨便輸入答案
+![](app_challenge6/圖片6.png)
+Step7: 堆疊視窗(右下)第一行出現ASCII "Invalid Password"的位置
+![](app_challenge6/圖片7.png)
+Step8: 堆疊視窗(右下)第一行出現ASCII “Invalid Password”的位置 
+![](app_challenge6/圖片8.png)
+Step9: 資料視窗(左下)發現隱藏的單字
+![](app_challenge6/圖片10.png)
+Step10: 將單子重組過後得到答案
+![](app_challenge6/圖片9.png)
 
 
 
