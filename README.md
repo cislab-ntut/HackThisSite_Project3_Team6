@@ -48,6 +48,20 @@
 ### 解法：
 ### 使用Application Challenge 6的方法是否能找出Password：
 
+
+## 1053331 徐永棚 - Application Challenge 6：Find the Password.
+### 題目：
+```
+題目為一個執行檔，透過此執行檔找出密碼
+```
+### 初步嘗試：
+### 上網搜尋：
+### 解法：
+
+
+
+
+
 ## 1051556 張楚翎 - Application Challenge 9：Press the Button.
 ### 題目
 ```
