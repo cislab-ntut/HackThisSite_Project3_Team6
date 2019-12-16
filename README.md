@@ -84,13 +84,12 @@
 ```
 重新排列g…ppinrtripowe後可得出一個英文單字，為powertripping
 試著將powertripping輸入到app5win.exe，得到The password is powertripping
-
 ```
-![](app_challenge5/ppt9.png)
+![](app_challenge5/ptt9.png)
 ```
 將找到的powertripping輸入Application Challenge 5 得到以下畫面，成功找出密碼
 ```
-![](app_challenge5/ppt10.png)
+![](app_challenge5/ptt10.png)
 ### 使用Application Challenge 6的方法是否能找出Password：
 ```
 從逆向視窗找出”ASCII “Invalid Password””
@@ -108,7 +107,9 @@
 ```
 ![](app_challenge5/ppt補4.png)
 ![](app_challenge5/ppt補5.png)
-####結果為使用Application Challenge 6的方法是可以找出Password的。
+```
+結果為使用Application Challenge 6的方法是可以找出Password的。
+```
 
 ## 1053331 徐永棚 - Application Challenge 6：Find the Password.
 ### 題目：
