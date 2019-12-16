@@ -157,8 +157,11 @@ Step9: 資料視窗(左下)發現隱藏的單字
 Step10: 將單子重組過後得到答案(cal.magi -> magical)
 ![](app_challenge6/圖片9.png)
 
-
-
+### 使用Application Challenge 5的方法是否能找出Password：
+```
+不行。因為無法找到ASCII "Please enter the Password"。無法找到整個字串叫做"Please enter the Password"，有可能是因為他都是用一個一個字元不斷去呼叫所以才找不到整個字串(如下圖)，因此只能用Application Challenge 6的方式去做。
+```
+![](app_challenge6/投影片4.jpg)
 ## 1051556 張楚翎 - Application Challenge 9：Press the Button.
 ### 題目
 ```
