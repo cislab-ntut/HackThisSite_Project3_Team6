@@ -43,8 +43,25 @@
 
 ## 1053356 胡嘉芸 - Application Challenge 5：Find the Password.
 ### 題目：
+```
+題目給一個執行檔，找出密碼
+```
 ### 初步嘗試：
+```
+直接執行執行檔，輸入任何字串按enter後執行檔直接關閉
+```
+![](app_challenge5/ppt1.PNG)
+```
+開啟cmd執行執行檔，隨意輸入任何字串按enter後，得到 Invalid Password 
+```
+![](app_challenge5/ppt2.PNG)
 ### 上網搜尋：
+```
+查找反組繹器ollyDbg使用方法，找到這篇[文章](https://ithelp.ithome.com.tw/articles/10188286)
+使用方法是下面這張圖
+```
+![](app_challenge5/ppt3.PNG)
+
 ### 解法：
 ### 使用Application Challenge 6的方法是否能找出Password：
 
