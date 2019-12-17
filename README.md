@@ -7,6 +7,7 @@
 ![](/app_challenge3/投影片-1.PNG)
 ### 初步嘗試：
  一開始我隨意輸入各種隨機的英文和數字組合，按下Authenticate後都下面訊息顯示Reading data，但是無論多久都沒有進一步的反應。
+
 ![](app_challenge3/投影片-2.png)
 
 ### 上網搜尋：
@@ -18,10 +19,10 @@
 ![](app_challenge3/投影片-4.jpg)
 ![](app_challenge3/投影片-5.jpg)
 ### 解法：
-```
+
 看到false之後馬上聯想到他會是一個boolean值，只要讓他變成true，應該就能解出來了，但是這邊我並不知道要用甚麼程式才能修改這個檔案，於是從剛剛的影片和[這個網站](http://sp4hack.blogspot.com/2012/09/hack-this-site-application-3.html
 )中找到了Hex Workshop的編輯器來修改這個程式。
-```
+
 Step1: 打開Hex Workshop
 ![](app_challenge3/投影片-6.jpg)
 Step2: 找到true和false
