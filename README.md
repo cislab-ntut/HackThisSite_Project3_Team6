@@ -1,6 +1,41 @@
 # Project6-3_Hackthissite
 
 
+## 1051409 張峻維 - Application Challenge 3：Find the Password.
+### 題目：
+題目只有一個程式，打開之後能輸入任意數字或是英文，並且有一個Authenticate按鍵可以點。
+![](/app_challenge3/投影片-1.PNG)
+### 初步嘗試：
+ 一開始我隨意輸入各種隨機的英文和數字組合，按下Authenticate後都下面訊息顯示Reading data，但是無論多久都沒有進一步的反應。
+![](app_challenge3/投影片-2.png)
+
+### 上網搜尋：
+1. 在[這個網站](https://www.youtube.com/watch?v=C5SbCX24_Ug)
+找到下一步驟提示，需要使用Wireshark
+2. 在啟動Wireshark之後找到了這個程式傳送的封包，這個封包是屬於http的protocol。
+![](app_challenge3/投影片-3.jpg)
+3. 打開之後發現有一個網址，點開連結頁面顯示false。
+![](app_challenge3/投影片-4.jpg)
+![](app_challenge3/投影片-5.jpg)
+### 解法：
+```
+看到false之後馬上聯想到他會是一個boolean值，只要讓他變成true，應該就能解出來了，但是這邊我並不知道要用甚麼程式才能修改這個檔案，於是從剛剛的影片和[這個網站](http://sp4hack.blogspot.com/2012/09/hack-this-site-application-3.html
+)中找到了Hex Workshop的編輯器來修改這個程式。
+```
+Step1: 打開Hex Workshop
+![](app_challenge3/投影片-6.jpg)
+Step2: 找到true和false
+![](app_challenge3/投影片-7.jpg)
+Step3: 將true改成false,false改成true後重新存成另一個檔案。
+![](app_challenge3/投影片-8.jpg)
+Step 4: 打開新的檔案，再一次隨機輸入任意英文或數字組合，跳出新視窗，上面顯示密碼。
+![](app_challenge3/投影片-9.png)
+
+```
+確認結果正確
+```
+![](app_challenge3/投影片-10.jpg)
+
 ## 1053328 黃子庭 - Application Challenge 4：Press the Button.
 ### 題目：
 為一個有兩顆按鈕的應用程式，按下按鈕就能顯示寫有密碼的對話視窗。
