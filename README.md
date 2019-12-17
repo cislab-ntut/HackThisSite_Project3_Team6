@@ -223,7 +223,7 @@ Step 5: 將修改完畢的檔案另存新檔後，再開啟此檔案的執行檔
 1.輸入任意字串，按下每一個視窗上唯一的button，會由左至右依序顯示下一個視窗
 ![](app_challenge14/投影片3.JPG)
  
-2.嘗試數次輸入隨機字串後，皆顯示相同視窗內容，於是上網搜尋相關資源，參考http://www.nullsecurity.org/article/hackthissite_org_application_challenges#app_14w
+2.嘗試數次輸入隨機字串後，皆顯示相同視窗內容，於是搜尋[網路資源](http://www.nullsecurity.org/article/hackthissite_org_application_challenges#app_14w)，參考
 ，下載「ILSpy」工具，是C#的反組譯器。
 ### 解法
 Step1: 查看視窗內的元件所對應到的變數名稱與函式
