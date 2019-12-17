@@ -224,7 +224,7 @@ Step 5: 將修改完畢的檔案另存新檔後，再開啟此檔案的執行檔
 ![](app_challenge14/投影片3.JPG)
  
 2.嘗試數次輸入隨機字串後，皆顯示相同視窗內容，於是搜尋[網路資源](http://www.nullsecurity.org/article/hackthissite_org_application_challenges#app_14w)，發現它是C#編碼的執行檔案
-，於是下載C#的反組譯器 - ILSpy。
+，於是下載C#的反組譯器 - [ILSpy](https://discoverdot.net/projects/ilspy)
 ### 解法
 ```
 Step1: 查看視窗內的元件所對應到的變數名稱與函式
