@@ -221,7 +221,7 @@ Step 5: 將修改完畢的檔案另存新檔後，再開啟此檔案的執行檔
 ```
 ### 初步嘗試與參考文件
 1.輸入任意字串，按下每一個視窗上唯一的button，會由左至右依序顯示下一個視窗
-![](app_challenge14/投影片3.jpg)
+![](app_challenge14/投影片3.JPG)
  
 2.嘗試數次輸入隨機字串後，皆顯示相同視窗內容，於是上網搜尋相關資源，參考http://www.nullsecurity.org/article/hackthissite_org_application_challenges#app_14w
 ，下載「ILSpy」工具，是C#的反組譯器。
