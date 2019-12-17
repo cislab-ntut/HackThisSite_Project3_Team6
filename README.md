@@ -214,3 +214,31 @@ Step 5: 將修改完畢的檔案另存新檔後，再開啟此檔案的執行檔
 (修改後)
 ![](app_challenge9/投影片1-2.jpg)
 
+## 1053332 吳芷芳 - Application Challenge 14：It's Windows only for a reason
+### 題目：
+```
+題目為一個執行檔，有一個textBox可以輸入任意文字，及一顆Button
+```
+### 初步嘗試與參考文件
+1.輸入任意字串，按下每一個視窗上唯一的button，會由左至右依序顯示下一個視窗
+![](app_challenge14/投影片3.JPG)
+ 
+2.嘗試數次輸入隨機字串後，皆顯示相同視窗內容，於是上網搜尋相關資源，參考http://www.nullsecurity.org/article/hackthissite_org_application_challenges#app_14w
+，下載「ILSpy」工具，是C#的反組譯器。
+### 解法
+Step1: 查看視窗內的元件所對應到的變數名稱與函式
+![](app_challeng14/投影片5.JPG)
+Step2-1: 觀察vla這顆button的觸發事件，發現有一個條件式會比對textBox的內容是否為"somerandomvl"
+![](app_challeng14/投影片6.JPG)
+Step2-2: 將"somerandomvl"作為textBox的輸入值所得到的結果，發現這並不能得到答案
+![](app_challeng14/投影片7.JPG)
+Step2-3: 仔細觀察條件式裡面的內容，條件符合與否都無法得到答案
+![](app_challeng14/投影片8.JPG)
+Step3-1: 接著觀察下面一個條件式，會發現條件恆成立
+![](app_challeng14/投影片9.JPG)
+Step3-2: 程式永遠無法跑到else if內，於是我們觀察else if裡面的內容，他會將"fm\`{f}kpwrn"解密
+![](app_challeng14/投影片10.JPG)
+Step3-3: 觀察解密函式
+![](app_challeng14/投影片11.JPG)
+Step4: 利用python實現解密函式，將"fm\`{f}kpwrn"解密，得到答案"ihatethereg"
+![](app_challeng14/投影片12.JPG)
