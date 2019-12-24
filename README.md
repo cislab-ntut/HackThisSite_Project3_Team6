@@ -1,5 +1,25 @@
 # Project6-3_Hackthissite
 
+## 1051407 陳睿暘 - Application Challenge 8
+### 題目：
+
+### 初步嘗試：
+
+
+### 上網搜尋：
+1. 在[這個網站](https://www.youtube.com/watch?v=C5SbCX24_Ug)
+找到下一步驟提示，需要使用Wireshark
+2. 在啟動Wireshark之後找到了這個程式傳送的封包，這個封包是屬於http的protocol。
+![](app_challenge3/投影片-3.jpg)
+3. 打開之後發現有一個網址，點開連結頁面顯示false。
+![](app_challenge3/投影片-4.jpg)
+![](app_challenge3/投影片-5.jpg)
+### 解法：
+
+```
+確認結果正確
+```
+![](app_challenge3/投影片-10.jpg)
 
 ## 1051409 張峻維 - Application Challenge 3：Find the Password.
 ### 題目：
