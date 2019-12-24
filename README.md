@@ -2,24 +2,35 @@
 
 ## 1051407 陳睿暘 - Application Challenge 8
 ### 題目：
+將題目的應用程式點開來，出現一個鍵盤
+![](app_challenge8/10.jpg)
 
 ### 初步嘗試：
-
+從鍵盤輸入數字，最多只能輸入六位數，輸入第七個數字時程式會直接關閉。
+使用x32dbg反組譯此應用程式，但沒有發現任何可用資訊。
+![](app_challenge8/1.jpg)
 
 ### 上網搜尋：
-1. 在[這個網站](https://www.youtube.com/watch?v=C5SbCX24_Ug)
-找到下一步驟提示，需要使用Wireshark
-2. 在啟動Wireshark之後找到了這個程式傳送的封包，這個封包是屬於http的protocol。
-![](app_challenge3/投影片-3.jpg)
-3. 打開之後發現有一個網址，點開連結頁面顯示false。
-![](app_challenge3/投影片-4.jpg)
-![](app_challenge3/投影片-5.jpg)
-### 解法：
+1. 在[這個網站](http://www.nullsecurity.org/article/hackthissite_org_application_challenges#app_08w)看到解答，但我的x32dbg內沒有顯示解答的記憶體位置，詳讀後，他說依照經驗，__vbaVarTstEq看起來很有趣，於是我從x32dbg中找到__vbaVarTstEq。
+![](app_challenge8/2.jpg)
 
+### 解法：
+找到__vbaVarTstEq
+![](app_challenge8/3.jpg)
+按下執行
+![](app_challenge8/4.jpg)
+進入到__vbaVarTstEq裡面
+![](app_challenge8/5.jpg)
+找到可用資訊在右方欄位下面"Correct!The magic number is: "
+於是我根據解答往下找是否有跟解答一樣的密碼，但往下找不到，後來嘗試往上找，發現有跟解答一樣的密碼，用紅色箭頭標示。
+![](app_challenge8/6.jpg)
+![](app_challenge8/7.jpg)
+![](app_challenge8/8.jpg)
+![](app_challenge8/9.jpg)
 ```
 確認結果正確
 ```
-![](app_challenge3/投影片-10.jpg)
+![](app_challenge8/11.jpg)
 
 ## 1051409 張峻維 - Application Challenge 3：Find the Password.
 ### 題目：
