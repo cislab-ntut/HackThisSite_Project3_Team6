@@ -86,9 +86,12 @@ Application Challenge 10：Find the Password. (medium)
 
 ### 初步嘗試：
 輸入任意數字組合，跳出錯誤訊息的視窗。
+
 ![](app_challenge10/app10-2.jpg)
 
+
 接著輸入英文和數字的任意組合，依舊跳出錯誤視窗。
+
 ![](app_challenge10/app10-3.jpg)
 
 ### 上網搜尋：
@@ -103,23 +106,30 @@ Application Challenge 10：Find the Password. (medium)
 
 3.在這邊可以觀察到其中有出現道error message的地方，在下面有一個call指令，它會print一個messagebox，因此懷疑它和密碼有關。
 ![](app_challenge10/app10-6.jpg)
+
 跳去Label1_Click_4049E0查看，這段address就是我們需要的關鍵。
 ![](app_challenge10/app10-12.jpg)
 
 4.再回到原本的Command1裡，當我們按下按鍵後，程式開始執行，但我們不會看到它跑第一行push ebp，因為error message先跳了出來
 所以這行address也是關鍵。
+
 ![](app_challenge10/app10-7.jpg)
 
 5.接著打開Ollydbg準備開始找剛剛的address。
+
 ![](app_challenge10/app10-8.jpg)
 
+
 點405500那行指令。
+
 ![](app_challenge10/app10-9.jpg)
 
 將內容改成JMP 4049E0，並按下Assemble。
+
 ![](app_challenge10/app10-10.jpg)
 
 按下ollydbg裡的開始按鍵，開始執行程式，再次輸入任意數字組合，獲得密碼。
+
 ![](app_challenge10/app10-11.jpg)
 
 ## 1053328 黃子庭 - Application Challenge 4：Press the Button.
