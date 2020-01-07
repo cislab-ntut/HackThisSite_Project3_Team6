@@ -82,41 +82,41 @@ Step 4: 打開新的檔案，再一次隨機輸入任意英文或數字組合，
 Application Challenge 10：Find the Password. (medium)
 ### 題目：
 是一個小視窗，能輸入密碼，右邊有一個Proceed按鍵。
-![](app_challenge3/app_challenge10/app10-1.jpg)
+![](app_challenge10/app10-1.jpg)
 
 ### 初步嘗試：
 輸入任意數字組合，跳出錯誤訊息的視窗。
-![](app_challenge3/app_challenge10/app10-2.jpg)
+![](app_challenge10/app10-2.jpg)
 接著輸入英文和數字的任意組合，依舊跳出錯誤視窗。
-![](app_challenge3/app_challenge10/app10-3.jpg)
+![](app_challenge10/app10-3.jpg)
 
 ### 上網搜尋：
 在[youtube](https://www.youtube.com/watch?v=lUBDuTvA8a0)上的影片中獲得提示，首先需要先用VB Decompiler來觀察這個程式，再使用ollydbg來更改裡面的label內容。
 
 ### 解法：
 1.使用VB Decompiler將題目的程式打開，並觀察內容。
-![](app_challenge3/app_challenge10/app10-4.jpg)
+![](app_challenge10/app10-4.jpg)
 
 2.觀察Command1裡的label(因為Command1控制的是buttom)
-![](app_challenge3/app_challenge10/app10-5.jpg)
+![](app_challenge10/app10-5.jpg)
 
 3.在這邊可以觀察到其中有出現道error message的地方，在下面有一個call指令，它會print一個messagebox，因此懷疑它和密碼有關。
-![](app_challenge3/app_challenge10/app10-6.jpg)
+![](app_challenge10/app10-6.jpg)
 跳去Label1_Click_4049E0查看，這段address就是我們需要的關鍵。
-![](app_challenge3/app_challenge10/app10-12.jpg)
+![](app_challenge10/app10-12.jpg)
 
 4.再回到原本的Command1裡，當我們按下按鍵後，程式開始執行，但我們不會看到它跑第一行push ebp，因為error message先跳了出來
 所以這行address也是關鍵。
-![](app_challenge3/app_challenge10/app10-7.jpg)
+![](app_challenge10/app10-7.jpg)
 
 5.接著打開Ollydbg準備開始找剛剛的address。
-![](app_challenge3/app_challenge10/app10-8.jpg)
+![](app_challenge10/app10-8.jpg)
 點405500那行指令。
-![](app_challenge3/app_challenge10/app10-9.jpg)
+![](app_challenge10/app10-9.jpg)
 將內容改成JMP 4049E0，並按下Assemble。
-![](app_challenge3/app_challenge10/app10-10.jpg)
+![](app_challenge10/app10-10.jpg)
 按下ollydbg裡的開始按鍵，開始執行程式，再次輸入任意數字組合，獲得密碼。
-![](app_challenge3/app_challenge10/app10-11.jpg)
+![](app_challenge10/app10-11.jpg)
 
 ## 1053328 黃子庭 - Application Challenge 4：Press the Button.
 ### 題目：
