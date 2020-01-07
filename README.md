@@ -87,6 +87,7 @@ Application Challenge 10：Find the Password. (medium)
 ### 初步嘗試：
 輸入任意數字組合，跳出錯誤訊息的視窗。
 ![](app_challenge10/app10-2.jpg)
+
 接著輸入英文和數字的任意組合，依舊跳出錯誤視窗。
 ![](app_challenge10/app10-3.jpg)
 
@@ -111,10 +112,13 @@ Application Challenge 10：Find the Password. (medium)
 
 5.接著打開Ollydbg準備開始找剛剛的address。
 ![](app_challenge10/app10-8.jpg)
+
 點405500那行指令。
 ![](app_challenge10/app10-9.jpg)
+
 將內容改成JMP 4049E0，並按下Assemble。
 ![](app_challenge10/app10-10.jpg)
+
 按下ollydbg裡的開始按鍵，開始執行程式，再次輸入任意數字組合，獲得密碼。
 ![](app_challenge10/app10-11.jpg)
 
