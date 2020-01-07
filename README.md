@@ -82,6 +82,7 @@ Step 4: 打開新的檔案，再一次隨機輸入任意英文或數字組合，
 Application Challenge 10：Find the Password. (medium)
 ### 題目：
 是一個小視窗，能輸入密碼，右邊有一個Proceed按鍵。
+
 ![](app_challenge10/app10-1.jpg)
 
 ### 初步嘗試：
@@ -105,9 +106,11 @@ Application Challenge 10：Find the Password. (medium)
 ![](app_challenge10/app10-5.jpg)
 
 3.在這邊可以觀察到其中有出現道error message的地方，在下面有一個call指令，它會print一個messagebox，因此懷疑它和密碼有關。
+
 ![](app_challenge10/app10-6.jpg)
 
 跳去Label1_Click_4049E0查看，這段address就是我們需要的關鍵。
+
 ![](app_challenge10/app10-12.jpg)
 
 4.再回到原本的Command1裡，當我們按下按鍵後，程式開始執行，但我們不會看到它跑第一行push ebp，因為error message先跳了出來
